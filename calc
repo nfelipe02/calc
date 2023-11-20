@@ -1,0 +1,30 @@
+numero1 = 0
+numero2 = 0
+resultado = 0 
+operacao = ''
+##########################################################################################
+
+numero1 = int(input('Digite o número 1:'))
+print(f'Escolha uma operação')
+print(f'1 = soma')
+print(f'2 = subtração')
+print(f'3 = multiplicação')
+print(f'4 = divisão')
+operacao = int(input('Digite a operaçao:'))
+numero2 = int(input('Digite o número 2:'))
+
+##########################################################################################
+if operacao == 1:
+    resultado = numero1 + numero2
+    print(resultado)
+elif operacao == 2:
+    resultado = numero1 - numero2
+    print(resultado)
+elif operacao == 3:
+    resultado = numero1 * numero2
+    print(resultado)
+elif operacao == 4:
+    resultado = numero1 / numero2
+    print(resultado)
+else:
+    print('Operação Inválida')   
